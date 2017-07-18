@@ -1,0 +1,21 @@
+[package]
+name = "lookengine"
+version = "0.1.0"
+authors = ["mike <Michael.R.Ditto@gmail.com>"]
+description = "Cross platform 2D rendering engine"
+repository = "https://gitlab.com/Miridyan/lookengine"
+
+[dependencies]
+glutin = "0.8.1"
+
+gl = { version = "0.6.1", optional = true}
+vulkano = { version = "0.5.3", optional = true}
+
+[features]
+default = ["gl"]
+with_vk = ["vulkano"]
+
+[lib]
+name = "lookengine"
+path = "src/lib.rs"
+crate-types = ["rlib", "dylib"]

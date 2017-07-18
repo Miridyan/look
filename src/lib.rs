@@ -1,5 +1,9 @@
-extern crate gl;
 extern crate glutin;
+
+#[cfg(feature = "default")]
+extern crate gl;
+#[cfg(feature = "with_vk")]
+extern crate vulkano;
 
 mod backend;
 
@@ -7,9 +11,9 @@ mod backend;
 pub mod primative;
 
 #[cfg(feature = "default")]
-pub use backend::opengl::*;
+use backend::opengl::*;
 #[cfg(feature = "with_vk")]
-pub use backend::vulkan::*;
+use backend::vulkan::*;
 
 #[cfg(test)]
 mod tests {

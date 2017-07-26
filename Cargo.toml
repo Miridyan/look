@@ -1,9 +1,9 @@
 [package]
-name = "lookengine"
+name = "look"
 version = "0.1.0"
 authors = ["mike <Michael.R.Ditto@gmail.com>"]
 description = "Cross platform 2D rendering engine"
-repository = "https://gitlab.com/Miridyan/lookengine"
+repository = "https://gitlab.com/Miridyan/look"
 
 [dependencies]
 glutin = "0.8.1"

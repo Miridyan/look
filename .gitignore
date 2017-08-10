@@ -1,3 +1,5 @@
 /target/
+/src/renderer/target/
+
 **/*.rs.bk
 Cargo.lock

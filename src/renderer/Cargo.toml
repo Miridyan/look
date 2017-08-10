@@ -1,0 +1,24 @@
+[package]
+name = "look_renderer"
+version = "0.1.0"
+authors = ["Michael Ditto <Michael.R.Ditto@gmail.com>"]
+description = "A high level 2d renderer heavily inspired by amethyst_renderer"
+
+[dependencies]
+cgmath = "0.12"
+fnv = "1.0"
+
+gfx = "0.16.1"
+gfx_device_gl = "0.14.1"
+gfx_window_glutin = "0.17.0"
+
+glutin = "0.6.2"
+
+mopa = "0.2"
+specs = "0.9.1"
+
+carboxyl = "0.2.1"
+
+[[example]]
+name = "basic"
+path = "examples/basic/main.rs"
